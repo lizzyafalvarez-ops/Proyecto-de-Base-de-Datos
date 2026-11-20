@@ -6,7 +6,3 @@ JOIN Reaccionar as r ON r.IDPub = p.IDPub
 GROUP BY u.Nombre, u.IDU, p.IDPub
 ORDER BY total_de_reacciones DESC
 
-
-
-
-
