@@ -1,7 +1,6 @@
 -- SQLBook: Markup
 el metodo TIMESTAMPDIFF lo uso para calcular la edad a partir de le fecha de nacimiento
 -- SQLBook: Code
--- Perfil demografico: cantidad y porcentaje por rango de edad
 WITH edades AS (
     SELECT TIMESTAMPDIFF(YEAR, FechaDeNacimiento, CURDATE()) AS Edad
     FROM Usuario
@@ -31,16 +30,3 @@ SELECT
 FROM conteos AS c
 CROSS JOIN total_usuarios AS t
 ORDER BY CAST(SUBSTRING_INDEX(c.RangoEdad, '-', 1) AS UNSIGNED);
-
-Select edades FROM
--- SQLBook: Markup
-Verificar la edad maxima
--- SQLBook: Code
-Select * FROM `Usuario` WHERE FechaDeNacimiento LIKE "1955%";
--- SQLBook: Markup
-Verificar la edad minima
--- SQLBook: Code
-Select * FROM `Usuario` WHERE FechaDeNacimiento LIKE "2007%";
--- SQLBook: Code
-SELECT u.`Nombre`, ID.Nombre
-FROM Usuario as u;
