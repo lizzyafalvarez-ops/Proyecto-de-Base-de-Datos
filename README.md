@@ -1,6 +1,20 @@
-# Base de Datos AquaLife - MySQL Docker
+# Proyecto de Base de Datos AquaLife
 
-Este proyecto contiene la configuración de Docker para crear y cargar automáticamente la base de datos **AquaLife** en MySQL.
+Este proyecto contiene la base de datos relacional AquaLife y las soluciones
+correspondientes a las preguntas del curso.
+
+## Estructura del proyecto
+
+```text
+Pregunta1/  Pregunta2/  Pregunta3/  Pregunta4/
+Pregunta5/  Pregunta6/  docs/
+```
+
+Cada carpeta `PreguntaX` agrupa la solución de una pregunta. Dentro de ella, los
+archivos se organizan por tecnología, por ejemplo `mysql/`, `neo4j/`, `mongo/`,
+`app/` o `docs/`. La configuración Docker común se mantiene en la raíz del proyecto.
+
+Las soluciones específicas se documentan en el `README.md` de cada pregunta.
 
 ## Archivos
 
